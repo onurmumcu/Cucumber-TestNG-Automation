@@ -1,0 +1,20 @@
+package com.app.runners;
+
+
+import org.junit.runner.RunWith;
+import cucumber.api.CucumberOptions;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
+
+
+//@RunWith(Cucumber.class)
+@CucumberOptions(
+        features = "@target/rerun.txt",
+        plugin = {
+        		"json:target/cucumber.json",
+        		"html:target/cucumber/",
+        		"rerun:target/rerun.txt"}
+)
+
+public class FailedTestRunner {
+
+}

@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SuiteCRM Regression Automation" verbose="2" parallel="tests" thread-count="5">
+	<test name="Automated tests">
+		<classes>
+			<class name="com.app.runners.CuckesRunner"></class>
+		</classes>
+	</test>
+</suite>
+
